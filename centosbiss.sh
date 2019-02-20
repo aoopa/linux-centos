@@ -33,7 +33,7 @@ echo 'AllowUsers root' >> /etc/ssh/sshd_config
 echo 'AllowUsers bank' >> /etc/ssh/sshd_config
 sed -i 's/# %wheel\tALL=(ALL)\tNOPASSWD: ALL/%wheel\tALL=(ALL)\tNOPASSWD: ALL/' /etc/sudoers
 
-rm -rf mod_evasive* csf* centos.sh xcache*
+rm -rf mod_evasive* csf* centosbiss.sh xcache*
 
 echo "************************************************************"
 echo "*                 PLEASE REBOOT SERVER NOW                 *"
