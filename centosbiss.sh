@@ -37,6 +37,7 @@ rm -rf mod_evasive* csf* centosbiss.sh xcache*
 history -c
 
 echo "************************************************************"
+echo "*                      Hello : $(LOGNAME)"                 *"
 echo "*                 PLEASE REBOOT SERVER NOW                 *"
 echo "*      Current date : $(date)         *"
 echo "*                 Hostname   @ $(hostname)                 *"
