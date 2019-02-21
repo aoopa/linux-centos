@@ -42,7 +42,6 @@ sed -i 's/# %wheel\tALL=(ALL)\tNOPASSWD: ALL/%wheel\tALL=(ALL)\tNOPASSWD: ALL/' 
 
 ################## Step3 Install Monitor Process ####################
 wget dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
-rpm -ihv epel-release-7-11.noarch.rpm 
 yum -y install epel-release
 yum install htop -y
 yum install atop -y
@@ -107,6 +106,9 @@ cat <<EOF >>/etc/nginx/nginx-info.conf
         gzip_types *;
     }
 EOF
+
+rm -rf mod_evasive* csf* aoo.sh xcache*
+history -c
 
 ####################### End Script ##########################
 echo "************************************************************"
