@@ -12,6 +12,7 @@ yum install wget -y
 yum install whois -y
 yum install npm -y
 yum install open-vm-tools -y
+yum install nginx -y
 
 # update os
 yum -y update
