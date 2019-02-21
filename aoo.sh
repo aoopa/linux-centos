@@ -41,7 +41,6 @@ sed -i 's/# %wheel\tALL=(ALL)\tNOPASSWD: ALL/%wheel\tALL=(ALL)\tNOPASSWD: ALL/' 
 # https://raw.githubusercontent.com/aoopa/linux-centos/master/Create%20Perl%20encripted%20Password%20by%20Aoo
 
 ################## Step3 Install Monitor Process ####################
-wget dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
 yum -y install epel-release
 yum install htop -y
 yum install atop -y
@@ -112,7 +111,7 @@ history -c
 
 ####################### End Script ##########################
 echo "************************************************************"
-echo "*                      Hello : "$USER"                     *"
+echo "*                      Hello : "$USER"                        *"
 echo "*                 PLEASE REBOOT SERVER NOW                 *"
 echo "*      Current date : $(date)         *"
 echo "*                 Hostname   @ $(hostname)                 *"
