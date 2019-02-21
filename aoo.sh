@@ -54,7 +54,8 @@ sed -i 's/#ExtendedStatus/ExtendedStatus/' /etc/httpd/conf/extra/httpd-info.conf
 
 
 echo -e '\e[1;36mInstall Netdata (Traffic/CPU Monitoring Graph) http://yourip:19999 ............................OK\e[0m';
-bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+curl -Ss https://my-netdata.io/kickstart.sh
+sh kickstart.sh
 yum install -y MySQL-python --disableexcludes=all
 cat <<EOF >>/etc/netdata/python.d/nginx.conf
 local:
