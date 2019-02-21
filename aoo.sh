@@ -14,6 +14,7 @@ yum install wget -y
 yum install whois -y
 yum install npm -y
 yum install open-vm-tools -y
+yum install epel-release -y
 yum install nginx -y
 
 # update os
@@ -41,7 +42,6 @@ sed -i 's/# %wheel\tALL=(ALL)\tNOPASSWD: ALL/%wheel\tALL=(ALL)\tNOPASSWD: ALL/' 
 # https://raw.githubusercontent.com/aoopa/linux-centos/master/Create%20Perl%20encripted%20Password%20by%20Aoo
 
 ################## Step3 Install Monitor Process ####################
-yum -y install epel-release
 yum install htop -y
 yum install atop -y
 yum install iftop -y
