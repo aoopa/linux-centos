@@ -108,7 +108,12 @@ cat <<EOF >>/etc/nginx/nginx-info.conf
     }
 EOF
 
-#################### End Script #######################
-echo "************************************************"
-echo "*           PLEASE REBOOT SERVER NOW           *"
-echo "************************************************"
+####################### End Script ##########################
+echo "************************************************************"
+echo "*                      Hello : $(LOGNAME)"                 *"
+echo "*                 PLEASE REBOOT SERVER NOW                 *"
+echo "*      Current date : $(date)         *"
+echo "*                 Hostname   @ $(hostname)                 *"
+echo "*                  Network configuration                   *"
+ip -o -f inet addr show | awk '/scope global/ {print $1, $2, $3, $4, $5, $6}'
+echo "************************************************************"
