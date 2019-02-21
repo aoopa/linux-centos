@@ -2,7 +2,7 @@
 # This script is written by Best Internet Service Solution
 # Script Developed by Apivat Pattana-Anurak
 # https://bestinternet.co.th 
-# Download : 
+# Download : curl -O https://raw.githubusercontent.com/aoopa/linux-centos/master/centosbiss.sh
 # Install : centosbiss.sh
 
 ## htop procress ##
