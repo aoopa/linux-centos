@@ -1,6 +1,9 @@
 #!/bin/bash
 # This script is written by Best Internet Service Solution
+# Script Developed by Apivat Pattana-Anurak
 # https://bestinternet.co.th 
+# Download : 
+# Install : centosbiss.sh
 
 ## htop procress ##
 yum -y install epel-release
