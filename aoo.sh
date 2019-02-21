@@ -2,6 +2,8 @@
 # Aoo Basic installation wrapper # Version 1.0.0.5
 # Script Developed by Apivat Pattana-Anurak
 # SysAdmin & Programmer Form #Bangkok #Thailand 
+# curl -O https://raw.githubusercontent.com/aoopa/linux-centos/master/aoo.sh
+# sh aoo.sh
 
 ################## Step1 basic install & update ####################
 # install
