@@ -110,7 +110,7 @@ EOF
 
 ####################### End Script ##########################
 echo "************************************************************"
-echo "*                      Hello : $(LOGNAME)"                 *"
+echo "*                      Hello : $(LOGNAME)                  *"
 echo "*                 PLEASE REBOOT SERVER NOW                 *"
 echo "*      Current date : $(date)         *"
 echo "*                 Hostname   @ $(hostname)                 *"
