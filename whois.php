@@ -372,24 +372,41 @@ function QueryWhoisServer($whoisserver, $domain) {
 </head>
 
 <body>
-<form action="<?=$_SERVER['PHP_SELF'];?>">
-<p><b><label for="domain">Domain/IP Address:</label></b> <input type="text" name="domain" id="domain" value="<?=$domain;?>"> <input type="submit" value="Lookup"></p>
-</form>
-<?php
-if($domain) {
-	$domain = trim($domain);
-	if(substr(strtolower($domain), 0, 7) == "http://") $domain = substr($domain, 7);
-	if(substr(strtolower($domain), 0, 4) == "www.") $domain = substr($domain, 4);
-	if(ValidateIP($domain)) {
-		echo "hello before check";
-		$result = LookupIP($domain);
-	}
-	elseif(ValidateDomain($domain)) {
-		$result = LookupDomain($domain);
-	}
-	else die("Invalid Input!");
-	echo "<pre>\n" . $result . "\n</pre>\n";
-}
-?>
+          <h3 class="pb-3 mb-4 font-italic border-bottom">Whois Domain Tools / Whois IP.</h3>
+
+          <div class="blog-post">
+            <h4 class="blog-post-title"> เครื่องมือตรวจสอบโดเมน / IP Address | Best IDC  </h4>
+            <p class="blog-post-meta">June , 2018 by <a href="#">Admin</a></p>
+<br><br><br><br>
+            <form action="<?=$_SERVER['PHP_SELF'];?>">
+				<div class="input-group mb-3">
+				  <input type="text" class="form-control" name="domain" id="domain"  
+				  placeholder=" Your Domain / IP Address [ โปรดระบุโเมน หรือ หมายเลข IP ของคุณ ] " 
+				  aria-label="Recipient's username" aria-describedby="basic-addon2">
+				  <div class="input-group-append">
+					<button class="btn btn-outline-success" type="submit">LookUp</button>
+				  </div>
+				</div>
+			</form>
+<br><br><br><br>
+<div class="p-3 mb-2 bg-white text-dark">
+			<?php
+				if($domain) {
+					$domain = trim($domain);
+					if(substr(strtolower($domain), 0, 7) == "http://") $domain = substr($domain, 7);
+					if(substr(strtolower($domain), 0, 4) == "www.") $domain = substr($domain, 4);
+					if(ValidateIP($domain)) {
+						echo "  ข้อมูล IP Address ของคุณ มีรายละเอียดดังต่อไปนี้";
+						$result = LookupIP($domain);
+					}
+					elseif(ValidateDomain($domain)) {
+						$result = LookupDomain($domain);
+					}
+					else die("Invalid Input!");
+					echo "<pre>\n" . $result . "\n</pre>\n";
+				}
+				?></div>
+				
+<br><br><br><br>
 </body>
 </html>
