@@ -46,6 +46,10 @@ yum install atop -y
 yum install iftop -y
 yum install nmon -y
 
+################## Step4 Install Alert Login ####################
+yum install mailx -y
+curl -O https://raw.githubusercontent.com/aoopa/linux-centos/master/.bashrc
+
 rm -rf mod_evasive* csf* aoo.sh xcache*
 history -c
 
