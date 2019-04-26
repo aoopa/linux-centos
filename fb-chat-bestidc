@@ -23,7 +23,7 @@
   attribution=setup_tool
   page_id="913481738667863"
   theme_color="#13cf13"
-  logged_in_greeting="สอบถามเพิ่มเติมเกี่ยวกับผลิตภัณฑ์ และการใช้งาน"
-  logged_out_greeting="สอบถามเพิ่มเติมเกี่ยวกับผลิตภัณฑ์ และการใช้งาน">
+  logged_in_greeting="BEST IDC ยินดีให้บริการค่ะ"
+  logged_out_greeting="BEST IDC ยินดีให้บริการค่ะ">
 </div>
     <!----------- End FB Chat------------->	
